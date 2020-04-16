@@ -82,7 +82,7 @@ img{
     width: 452px;
     height: 48px;
     font-size: 21px;
-    background-color: rgb(255,255,255, 0.7);
+    background-color: rgba(225, 225, 225, 0.7);
     font-family: "Microsoft JhengHei";
     font-weight: bold;
     background-image: url(../images/icons_down.png);
