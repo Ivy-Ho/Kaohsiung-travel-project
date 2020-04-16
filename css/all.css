@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*補充*/
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* css reset end*/
+.wrap  {
+    font-family: "Microsoft JhengHei";
+}
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+.header {
+    height: 380px;
+    background-image: url(../images/Hero.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.header h1  {
+    color: #fff;
+    font-size: 40px;
+    margin-top:89px;
+    margin-bottom: 96px;
+}
+.header .districtOptions select{
+    width: 452px;
+    height: 48px;
+    font-size: 21px;
+    opacity: 0.7;
+    font-family: "Microsoft JhengHei";
+    font-weight: bold;
+    background-image: url(../images/icons_down.png);
+    background-repeat: no-repeat;
+    background-position:right 17px center;
+    border: 3px solid #FFF;
+    padding: 0 10px;
+    border-radius: 3px;
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+.header .districtOptions select::-ms-expand {
+/* For IE10 */
+  display: none;
+}
+
+.popDistrict {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 26px 0;
+    box-shadow: 2px 2px 5px #d7d7d7;
+    border-radius: 5px;
+    position: absolute;
+    top: 352px;
+    background: #fff;
+}
+.popDistrict h2 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.popList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.popList li {
+    width: 130px;
+    border-radius: 5px;
+    margin-bottom: 26px;
+}
+.popList a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+}
+
+.btn-color1{
+    background: #8A82CC;
+}
+    .btn-color1:hover{
+        background: #6f68a5;
+    }
+.btn-color2{
+    background: #FFA782;
+}
+    .btn-color2:hover{
+        background: #d48b6d;
+    }
+.btn-color3{
+    background: #F5D105;
+}
+    .btn-color3:hover{
+        background: #e4c304;
+    }
+.btn-color4{
+    background: #559ACB;
+}
+    .btn-color4:hover{
+        background: #3e749a;
+    }
+
+.content {
+    padding: 84px 40px 44px;
+}
+.borderLine {
+    border: 1px dashed #559ac8;
+    margin-top: 49px;
+    position: relative;
+}
+.borderLine i {
+    color: #559AC8;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:24px;
+}
+.place-name{
+    font-size: 36px;
+    color: #8a82cc;
+    margin-top: 52px;
+    padding: 24px 0;
+    text-align: center;
+}
+.cardSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sceneCard {
+    box-shadow: 2px 2px 3px #d7d7d7;
+    width: 464px;
+    margin-bottom: 36px;
+}
+.cardHeader{
+    position: relative;
+}
+.topImg {
+    height: 155px;
+    width: 100%;
+}
+.cardHeader .topText {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 22px;
+}
+.cardHeader h3 {
+    font-size: 24px;
+}
+.cardBody {
+    padding: 16px 11px 22px 26px;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
+.icon-wrap {
+    width: 16px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 9px;
+}
+.cardBody p {
+    display: inline-block;
+}
+.flex-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.footer {
+    background: #559ac8;
+    font-size: 14px;
+    text-align: center;
+    padding: 24px;
+    line-height: 2;
+}
+.footerColor1 {
+    color: #fff;
+}
+.footerColor2 {
+    color: #ffd366;
+}
+.goTop{
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+}
+
+@media (max-width: 1000px){
+    .container {
+        width: auto;
+    }
+    .sceneCard {
+        width: 49%;
+        margin: 0 auto 36px;
+    }
+}
+@media (max-width: 812px){
+    .popDistrict {
+        width: 100%;
+    }
+    .borderLine i {
+        font-size: 44px;
+    }
+    .goTop img{
+        width: 44px;
+    }
+}
+@media (max-width: 768px){
+    .sceneCard {
+        width: 100%;
+    } 
+}
+@media (max-width: 568px){
+    .header {
+        padding: 0 2%;
+    }
+    .header form {
+        width: 100%;
+    }
+    .header .districtOptions select{
+        width: 100%;
+    }
+    .content {
+        padding: 84px 3% 44px;
+    }
+    .borderLine {
+        margin-top: 119px;
+    }
+}
